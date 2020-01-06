@@ -410,7 +410,7 @@ class Unicode:
             i += 1
         return str
 
-    def reArranceUnicodeTextForASCI(self, str):
+    def reArrangeUnicodeTextForASCI(self, str):
         
         cY = 0
         i = 0
@@ -575,7 +575,7 @@ class Unicode:
         srcString = util.preg_replace(pattern, replacement, srcString)
 
         # make correction
-        srcString = self.reArranceUnicodeTextForASCI(srcString)
+        srcString = self.reArrangeUnicodeTextForASCI(srcString)
 
         #inv_conversionMap = {v: k for k, v in conversionMap.items()}
         srcString = util.doCharMap(srcString, main_char)
